@@ -19,7 +19,7 @@
             <img src="img/Colicss.png"/>
             <div id="nav">
                 <ul>
-                    <li><a href="../Website/Contact/index.html">Contact</a></li>
+                    <li><a href="../Contact/index.html">Contact</a></li>
                      <li><a href="../Pakketten/index.html">Pakketten</a></li>
                     <li><a href="../Website/index.html">Home</a></li>
                 </ul>
@@ -28,7 +28,13 @@
 
         <div id="content">
             <div id="feature">
-                <video controls src="video/webhosting.mp4"></video>
+                <ul id="slides">
+                    <li class="slide showing">Slide 1</li>
+                    <li class="slide">Slide 2</li>
+                    <li class="slide">Slide 3</li>
+                    <li class="slide">Slide 4</li>
+                    <li class="slide">Slide 5</li>
+                </ul>
             </div>
             <div class="article column1">
                 <div class="text">
@@ -70,14 +76,14 @@
                 </div>
             </div>
             <div class="article column5">
-                <div class="afb"><img src="../Website/img/background1.jpeg" /> </div>
+                <div class="afb"><img src="../Project6/img/background1.jpeg" /> </div>
                 <h1>Artikel 1</h1>
                 <p style="padding:1em; width:39em;">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
                 </p>
             </div>
             <div class="article column6">
-                <div class="afb"><img src="../Website/img/background1.jpeg"/> </div>
+                <div class="afb"><img src="../Project6/img/Background1.jpeg"/> </div>
                 <h1>Artikel 2</h1>
                 <p style="padding:1em; width:39em;">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
@@ -89,6 +95,18 @@
             <p class="naam">Rick Brink &nbsp;Pict4v1B &nbsp;Alfa College Hardenberg</p>
         </div>
           
+        
+        <script>
+            var slides = document.querySelectorAll('#slides .slide');
+            var currentSlide = 0;
+            var slideInterval = setInterval(nextSlide,2000);
+
+            function nextSlide() {
+                slides[currentSlide].className = 'slide';
+                currentSlide = (currentSlide+1)%slides.length;
+                slides[currentSlide].className = 'slide showing';
+            }
+        </script>
     </body>
     
 </html>
