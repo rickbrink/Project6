@@ -24,7 +24,9 @@
             <img src="img/Colicss.png"/>
             <div id="nav">
                 <ul>
-                    <li><a href="../Contact/index.html">Contact</a></li>
+                    <li><a href="../Project6/Contact/index.html">Contact</a></li>
+                    <li><a href="../Klanten/index.html">Klanten</a></li>
+                    <li><a href="../Pakketten/index.html">Pakketten</a></li>
                     <li><a href="../index.html">Home</a></li>
                 </ul>
             </div>
@@ -39,27 +41,29 @@
                       <h1>Contact</h1>
 
                       <p>
-                          Alfa College<br>
-                          Parkweg 1<br>
-                          7772XP Hardenberg
+                          ColiCSS<br>
+                          Herenstraat 24<br>
+                          7776AG Slagharen<br>
+                          06-12412498<br>
+                          KVK: 05076893
                       </p>
                   </div>
 
-                        <form method="post" action="php/contact.php">
+                        <form name="form" onsubmit="error()" method="post">
 
                             <label>Naam</label><br>
-                            <input name="naam" type="text" required />
+                            <input name="naam" type="text"/>
                             <br><br>
 
                             <label>Telefoon <small>10 cijfers</small></label><br>
                             <input name="telefoon" type="number" /><br><br>
 
                             <label>E-mail</label><br>
-                            <input name="mail" type="email" required />
+                            <input name="mail" type="email"/>
                             <br><br>
 
                             <label>Bericht</label><br>
-                            <input class="bericht" name="bericht" type="text" required />
+                            <input class="bericht" name="bericht" type="text"/>
                             <br><br>
 
 
@@ -74,6 +78,10 @@
                       <a href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i>
 </a>
                   </div>
+                  <div class="timeline">
+                    <a class="twitter-timeline"  href="https://twitter.com/hashtag/colicss" data-widget-id="854604406574198785">Tweets over #colicss</a>
+          
+          </div>
                   
               </div>
                 
@@ -98,14 +106,14 @@
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
-                    zoom: 15,
+                    zoom: 18,
 
                     // The latitude and longitude to center the map (always required)
-                    center: new google.maps.LatLng(52.576068, 6.623131), // New York
+                    center: new google.maps.LatLng(52.626190, 6.556073), // New York
 
                     // How you would like to style the map. 
                     // This is where you would paste any style found on Snazzy Maps.
-                    styles: [{"stylers":[{"hue":"#dd0d0d"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]}]
+                    styles: [{"featureType":"all","elementType":"all","stylers":[{"hue":"#ffaa00"},{"saturation":"-33"},{"lightness":"10"}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"color":"#9c5e18"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"transit.line","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"saturation":"-23"},{"gamma":"2.01"},{"color":"#f2f6f6"}]},{"featureType":"water","elementType":"geometry.stroke","stylers":[{"saturation":"-14"}]}]
                 };
 
                 // Get the HTML DOM element that will contain your map 
@@ -117,10 +125,41 @@
 
                 // Let's also add a marker while we're at it
                 var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(52.576068, 6.623131),
+                    position: new google.maps.LatLng(52.626190, 6.556073),
                     map: map,
                     title: 'ColiCSS'
                 });
+            }
+        </script>
+        
+        <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+            
+            function error() {
+                var x = document.forms["form"]["naam"].value;
+                var y = document.forms["form"]["telefoon"].value;
+                var z = document.forms["form"]["mail"].value;
+                var a = document.forms["form"]["bericht"].value;
+                if (x == "") {
+                    alert("Naam moet worden ingevuld");
+                    return false;
+                }   
+                if (y == "") {
+                    alert("Telefoonnummer moet worden ingevuld");
+                    return false;
+                }  
+                if (z == "") {
+                    alert("E-mail moet worden ingevuld");
+                    return false;
+                }  
+                if (a == "") {
+                    alert("Bericht moet worden ingevuld");
+                    return false;
+                }  
+                else {
+                    alert("Bedankt voor het bericht!");
+                    return false;
+                }
             }
         </script>
         

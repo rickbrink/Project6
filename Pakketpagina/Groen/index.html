@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <!-- © Rick Brink - www.rickbrink.nl -->
+    <head>
+        
+        <meta content="text/html"; charset="utf-8" http-equiv="content-type"/>
+        
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title>ColiCSS</title>
+        
+    </head>
+    
+    <body>
+            
+        <div id="header">
+            <img src="img/Colicss.png"/>
+            <div id="nav">
+                <ul>
+                    <li><a href="file:///Users/rickbrink/Desktop/Project6/Contact/index.html">Contact</a></li>
+                    <li><a href="file:///Users/rickbrink/Desktop/Project6/Klanten/index.html">Klanten</a></li>
+                    <li><a href="file:///Users/rickbrink/Desktop/Project6/Pakketten/index.html">Pakketten</a></li>
+                    <li><a href="file:///Users/rickbrink/Desktop/Project6/index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="content">
+            
+           <section class="container">
+              <div class="left-half">
+                    <img src="img/background1.jpeg"/>
+              </div>
+              <div class="right-half">
+                    <div class="text">
+                    <h2>Pakket Groen</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                        </div>
+                    <ul>
+                        <li>1TB opslag</li>
+                    </ul>
+                    
+                    <select id="prijzen" onchange="verander()">
+                        <option onchange="maand()" value="€10 per maand">1 maand</option>
+                        <option onchange="jaar()" value="€120 per jaar">1 jaar</option>
+                        <option onchange="vijfjaar()" value="€600 per 5 jaar">5 jaar</option>
+                    </select>
+                    
+                    <h1 id="prijs"></h1>
+                    <input onclick="bericht()" type="submit" value="Koop nu">
+                </div>
+              </div>
+            </section>
+        
+        </div>
+        
+        <footer></footer>
+        
+        <script>
+            function verander() {
+                var x = document.getElementById("prijzen").value;
+                document.getElementById("prijs").innerHTML = x;
+            }
+            function bericht() {
+                var x = document.getElementById("prijzen").value;
+                alert("Bedankt voor uw bestelling! Het bedrag bedraagt " + x);   
+            }
+        </script>
+          
+    </body>
+    
+</html>

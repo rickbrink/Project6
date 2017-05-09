@@ -22,13 +22,13 @@ body{
     width:100%;
     font-size: 1em; 
     font-weight: bold;
-    color:#c00712;
+    color:#FF9E00;
     text-shadow:2px 2px #c9c9c9;
 }
 
 #nav a{
     text-decoration: none; 
-    color:#c00712;
+    color:#FF9E00;
 }
 #nav a:hover{
     color:dimgray;
@@ -37,7 +37,7 @@ body{
 #content{
     margin-top:3em;
     overflow: auto;
-    background-color: #F44F57;
+    background-color: #FFD38D;
 }
 
 #nav li{
@@ -55,13 +55,13 @@ video{
 }
 
 .column1, .column2, .column3{
-    width:30%;
+    width:20%;
     float:left;
-    margin-left:2.5em;
-    height:600px;
+    margin-left:9em;
+    height:650px;
     background-color:white;
     overflow: hidden;
-    border: 4px solid #740006;
+    border: 4px solid #AD6B00;
     border-radius: 10px;
     background-image:url(../img/background1.jpeg);
     background-size: cover;
@@ -69,13 +69,13 @@ video{
 }
 
 .column4, .column5, .column6{
-    width:30%;
+    width:20%;
     float:left;
-    margin-left:2.5em;
-    height:520px;
+    margin-left:9em;
+    height:570px;
     background-color:white;
     overflow: hidden;
-    border: 4px solid #740006;
+    border: 4px solid #AD6B00;
     border-radius: 10px;
     background-image:url(../img/background1.jpeg);
     background-size: cover;
@@ -91,13 +91,18 @@ img{
 
 .text{
     width:100%;
-    height:300px;
+    height:350px;
     z-index: 10;
     color:black;
     margin-top:300px;
     margin-left:-3px;
     background-color: white;
-    border:4px solid #740006;
+    border:4px solid #AD6B00;
+}
+
+.text a{
+    text-decoration: none;
+    color:black;
 }
 
 .text ul{
@@ -118,7 +123,7 @@ img{
     font-size: 1.75em;
 }
 
-.text button{
+.text input{
     width:200px;   
     height:50px;
     margin-top:-5px;
@@ -140,7 +145,7 @@ article p{
     background-image: url(../img/background1.jpeg);
     background-size: cover;
     border-radius: 0px 10px 0px 10px;   
-    border: 4px solid #740006;
+    border: 4px solid #AD6B00;
     float:right;
     margin-right:-20px;
     margin-top:-20px;
@@ -155,7 +160,7 @@ article p{
 }
 
 .naam{
-    color:#c00712;  
+    color:#FF9E00;  
     float:right;
     margin-right:15px;
 }

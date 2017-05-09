@@ -1,0 +1,119 @@
+body{
+    margin:0px;  
+    width:100%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#header{
+    width:100%;
+    position: fixed;
+    top:0px;
+    background-color:white;
+}
+
+#header img{
+    width:200px;
+    float: left;
+    margin: 1px;
+}
+
+#nav{
+    width:100%;
+    font-size: 1em; 
+    font-weight: bold;
+    color:#FF9E00;
+    text-shadow:2px 2px #c9c9c9;
+}
+
+#nav a{
+    text-decoration: none; 
+    color:#FF9E00;
+}
+#nav a:hover{
+    color:dimgray;
+}
+
+#content{
+    height:695px;
+    margin-top:3em;
+    overflow: auto;
+    background-color: #FFD38D;
+}
+
+#nav li{
+    display: inline;
+    float: right;
+    margin-right:3.5em;
+}
+
+.titel{
+    margin-top: 60px;   
+}
+
+.review{
+    width:300px;
+    height:400px;
+    background-color: white;
+    margin:40px;
+    border: 4px solid #AD6B00;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.review ul{
+    margin-left: -30px;   
+}
+
+.foto{
+    width:150px;
+    height:150px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:10px;
+    background-color: black;
+    border-radius: 75px;
+    border: 4px solid black;
+    overflow: hidden;
+}
+
+.foto img{
+    width:150px; 
+}
+
+.rating{
+    width:35%;
+    margin-top: -10px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.rating i{
+    font-size: 1em;  
+    color:white;
+    text-shadow:     0 1px 0 hsl(174,5%,80%),
+	                 0 2px 0 hsl(174,5%,75%),
+	                 0 3px 0 hsl(174,5%,70%),
+	                 0 4px 0 hsl(174,5%,66%),
+	
+	                 0 0 5px rgba(0,0,0,.05),
+	                0 1px 3px rgba(0,0,0,.2),
+	                0 3px 5px rgba(0,0,0,.2),
+	               0 5px 10px rgba(0,0,0,.2),
+	              0 10px 10px rgba(0,0,0,.2),
+	              0 20px 20px rgba(0,0,0,.3);
+}
+
+#footer{
+    width:100%;
+    font-size: 1em; 
+    font-weight: bold;
+    color:#2d2d2d;
+    text-shadow:2px 2px #c9c9c9;
+}
+
+.naam{
+    color:#FF9E00;  
+    float:right;
+    margin-right:15px;
+}

@@ -25,13 +25,13 @@ body{
     width:100%;
     font-size: 1em; 
     font-weight: bold;
-    color:#c00712;
+    color:#FF9E00;
     text-shadow:2px 2px #c9c9c9;
 }
 
 #nav a{
     text-decoration: none; 
-    color:#c00712;
+    color:#FF9E00;
 }
 #nav a:hover{
     color:dimgray;
@@ -48,12 +48,12 @@ li{
 }
 
 section{
-    height:800px;   
+    height:950px;   
 }
 
 .left-half {
-    width:40%;
-    background-color:#c00712;
+    width:60%;
+    background-color:#FFD38D;
     overflow: hidden;
     padding-top:80px;
     color:white;
@@ -61,22 +61,38 @@ section{
 
 .contact{
     float:left; 
-    margin-left:3em;
+    margin-left:3.2em;
+    margin-top:-20px;
+}
+
+.contact h1{
+    font-size: 2em;   
+}
+
+.contact p{
+    font-size: 1.5em;   
 }
 
 .socialMedia{
-    float:right;   
-    margin-right:3em;
-    margin-top:-35.6em;
+    float:right;  
+    height:150px;
+    margin-right:20%;
+    margin-top:-72.2%;
+}
+
+.socialMedia h1{
+    font-size:2em;   
 }
 
 .socialMedia i{
-    font-size:40px;
+    font-size:4em;
     margin:10px;
 }
 
 form{
-     margin-top:14em;
+    width:35%;
+     margin-top:32%;
+    margin-left:2%;
 }
 
 a{
@@ -93,15 +109,18 @@ input{
     height:100px;   
 }
 
+.timeline{
+    margin-top:-40%;
+    margin-left:37%;
+}
+
 .right-half {
-    width:60%;
+    width:40%;
     background-color: black;
     overflow: hidden;
     color:white;
     font-size: 1em;
 }
-
-
 
 #map{
     width:100%;
